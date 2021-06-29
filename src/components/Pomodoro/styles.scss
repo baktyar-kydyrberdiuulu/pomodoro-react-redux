@@ -1,0 +1,44 @@
+@import "../../assets/styles/partials/mixins";
+
+#timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  #actions {
+    padding: 10px;
+  }
+
+  #timer {
+    margin-top: 10px;
+  }
+
+  #sub-label {
+    font-size: 25px;
+    margin-top: 15px;
+    color: midnightblue;
+    font-weight: bold;
+  }
+
+  #timer-label {
+    font-size: 40px;
+    @include tracking();
+  }
+
+  #time-left {
+    font-size: 50px;
+  }
+
+  #start_stop {
+    @include button();
+  }
+
+  #reset {
+    @include button();
+  }
+
+  #progress {
+    @include tracking();
+  }
+}

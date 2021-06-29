@@ -1,0 +1,106 @@
+@import "../../assets/styles/partials/colors";
+
+#wrapper-settings {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 230px;
+  width: 250px;
+  background-color: $text-color;
+  color: $text-color;
+  border-radius: 10px;
+  -webkit-box-shadow: 15px 19px 5px 0px rgba(29, 205, 240, 1);
+  -moz-box-shadow: 15px 19px 5px 0px rgba(29, 205, 240, 1);
+  box-shadow: 15px 19px 5px 0px rgba(29, 205, 240, 1);
+
+  #break-label {
+    background-color: $background;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  #session-label {
+    background-color: $background;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  #session-wrapper {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #infos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    margin-top: 30px;
+    justify-items: center;
+  }
+
+  .action-button {
+    padding: 5px;
+    width: 30px;
+    border-width: 1px;
+    border-radius: 5px;
+    color: $background;
+    margin-left: 20px;
+    // padding-right: 50px;
+  }
+}
+
+#sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .item {
+    display: flex;
+    background-color: $background-sidebar;
+    width: 45px;
+    height: 45px;
+    border-bottom-left-radius: 15px;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      width: 45px;
+      height: 45px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: $text-color;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

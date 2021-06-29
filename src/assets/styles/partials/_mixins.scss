@@ -1,0 +1,57 @@
+@mixin button() {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: "#fff";
+  border-style: none;
+  color: #ff2c65;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 7px 3px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 7px 7px 3px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 7px 7px 3px rgba(0, 0, 0, 0.31);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@mixin tracking() {
+  -webkit-animation: tracking-in-expand-fwd 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+
+  @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+}
