@@ -17,7 +17,7 @@ export const increamentSession = () => ({
 })
 
 export const decreamentSession = () => ({
-  type: BREAK_DECREAMENT
+  type: SESSION_DECREAMENT
 })
 
 export const resetBoth = () => ({
